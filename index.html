@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/comment.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson__15</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="drop">
+					<div class="drop__image">
+						<img src="img/illustration.png" alt="illustration">
+					</div>
+					<div class="drop__main main-drop">
+						<div class="main-drop__titel titel">
+							<div class="titel__subtitel">Any questions?</div>
+							<h2 class="titel__titel">Drop us a line</h2>
+						</div>
+						<div class="main-drop__form form-drop">
+							<form class="form-drop__pract" method="post" action="https://jsonplaceholder.typicode.com/posts">
+								<div class="from-drop__content1 box-deck">
+									<div class="box-desc__box">
+										<label class="box-desc__label" for="text1">First Name*</label>
+										<input class="box-desc__input" autocomplete="off" required placeholder="Your first name"
+											id="text1" type="text">
+									</div>
+									<div class="box-desc__box">
+										<label class="box-desc__label" for="text2">Last Name*</label>
+										<input class="box-desc__input" autocomplete="off" required placeholder="Your last name"
+											id="text2" type="text">
+									</div>
+									<div class="box-desc__box">
+										<label class="box-desc__label" for="email">Email*</label>
+										<input class="box-desc__input" autocomplete="off" required
+											placeholder="Your working email" id="email" type="email">
+									</div>
+									<div class="box-desc__box">
+										<label class="box-desc__label" for="tel">Phone</label>
+										<input class="box-desc__input" autocomplete="off" required placeholder="Your phone number"
+											id="tel" type="tel">
+									</div>
+									<div class="box-desc__box">
+										<label class="box-desc__label" for="drop-area">Message</label>
+										<textarea name="message" class="box-desc__input textarea " required id="drop-area"
+											cols="30" rows="10" autocomplete="off" placeholder="comments"></textarea>
+									</div>
+								</div>
+								<div class="from-drop__contentc2 contentc2">
+									<div class="contentc2__chkb">
+										<div class="contentc2__wrap">
+											<input class="contentc2__input" id="checkbox-input" name="agree" type="checkbox"
+												value="yes">
+											<label class="contentc2__label" for="checkbox-input"><span class="content2__text">I
+													agree
+													to receive
+													communications from Createx Online School</span></label>
+										</div>
+									</div>
+									<div class="contentc2__desc">
+										<button class="contentc2__btn button">Send message</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<form class="form" method="post" action="https://jsonplaceholder.typicode.com/posts">
+					<div class="form__line">
+						<label class="form__label" for="form__email">E-mail</label>
+						<input class="form__email" id="form__email" type="email" name="email" autocomplete="off"
+							placeholder="E-mail" required>
+					</div>
+					<div class="form__line">
+						<label class="form__label" for="form__password">password</label>
+						<input class="form__password" id="form__password" type="password" name="password" autocomplete="off"
+							placeholder="password" required>
+					</div>
+					<div class="form__line">
+						<label class="form__label" for="form__name">name</label>
+						<input class="form__name" id="form__name" type="text" name="name" autocomplete="off"
+							placeholder="name" required>
+					</div>
+					<div class="form__line">
+						<label class="form__label" for="form__surname">surname</label>
+						<input class="form__surname" id="form__surname" type="text" name="surname" autocomplete="off"
+							placeholder="surname" required>
+					</div>
+					<div class="form__line">
+						<label class="form__label" for="form__tel">phone</label>
+						<input class="form__tel" id="form__tel" type="tel" name="tel" autocomplete="off" placeholder="+380"
+							required>
+					</div>
+					<div class="form__line">
+						<input class="form__input" autocomplete="off" name="date" type="date" required>
+					</div>
+					<div class="form__line">
+						<input class="form__input" autocomplete="off" name="range" type="range">
+					</div>
+
+					<div class="form__line">
+						<div class="checkbox">
+							<input class="checkbox__input" id="form__chkb" type="checkbox" name="chkb" value="yes">
+							<label class="checkbox__label" for="form__chkb"><span class="checkbox__text">are you
+									18
+									years?</span></label>
+						</div>
+					</div>
+					<div class="form__line">
+						<div class="checkbox">
+							<input class="checkbox__input2" id="form__chkb2" type="checkbox" name="chkb2" value="yes">
+							<label class="checkbox__label2" for="form__chkb2"><span class="checkbox__text">are you 18
+									years?</span></label>
+						</div>
+					</div>
+					<div class="form__block-country">
+						<div class="form__text-country">
+							you live in ukraine?
+						</div>
+						<div class="form__gap">
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="country-no" type="radio" name="country"
+									value="no" required checked>
+								<label class="form__label-radio" for="country-no"><span class="form__span">no</span> </label>
+							</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="country-yes" type="radio" name="country"
+									value="no" required>
+								<label class="form__label-radio" for="country-yes"><span class="form__span">yes</span> </label>
+							</div>
+						</div>
+					</div>
+					<div class="form__line">
+						<textarea name="comments" class="form__textarea" cols="30" rows="10" autocomplete="off"
+							placeholder="comments" required></textarea>
+					</div>
+
+					<div class="form__sel">
+						<select class="form__select" name="lest">
+							<option value="Poland">Poland</option>
+							<option selected value="Germany">Germany</option>
+							<option value="Czech">Czech</option>
+							<option value="Norway">Norway</option>
+							<option value="Italy">Italy</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<input class="form__file" type="file" name="file" accept="image/png, image/jpeg" multiple>
+					</div>
+					<div class="form__line-btn">
+						<button type="submit" class="form__btn">send</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+
+</body>
+
+</html>
